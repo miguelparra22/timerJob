@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/styles/style.css">
+    <title>TimerJob</title>
+</head>
+
+<body>
+
+    <main class="background-principal">
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid">
+                <h2><a class="navbar-brand" href="#">TimerJob</a></h2>
+            </div>
+        </nav>
+
+        <section class="viewGlass" id="container-message">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 m-auto container-message">
+                        <h2>Es hora de una pausa activa</h2>
+                        <hr/>
+                        <p>
+                            Recuerda que para tu salud es muy importante tener una pausa activa,
+                            en este  juego deberás observar una imagen por 20 segundos,
+                            luego de eso deberás seleccionar la imagen original.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center m-auto">
+                        <div class="container-button">
+                            <button onclick="IniciarJuego()" class="btn btn-info btn-group-lg text-white">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="viewGlass" id="containerGameOne">
+
+            <div class="container" id="firstImageGameOne">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 m-auto">
+                                      <img src="./Assets/images/imagen1.png" width="500" height="300" alt="imagen-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="imageComparativeOne">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" value="correct" id="radio1" name="radioImage" />
+                                    <img src="./Assets/images/imagen1.png" class="sizeImage" alt="imagen-1">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" value="Incorrect" id="radio2" name="radioImage" />
+                                    <img src="./Assets/images/Imagen1C.png" class="sizeImage"  alt="imagen-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center m-auto p-3">
+                        <div class="container-button">
+                            <button onclick="comprobar(this.id)" class="btn btn-info btn-group-lg text-white" id="buttonOneGame">Comprobar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="viewGlass" id="containerGameTwo">
+
+            <div class="container" id="firstImageGameTwo">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 m-auto">
+                                      <img src="./Assets/images/Imagen2.png" width="500" height="300" alt="imagen-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="imageComparativeTwo">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="container">
+                                        <input type="radio" value="Incorrect" id="radio3" class="radioB" name="radioImage2" />
+                                        <img src="./Assets/images/Imagen2C.png" class="sizeImage" alt="imagen-1">
+                                   
+                                    </div>
+                                 </div>
+                                <div class="col-md-6">
+                                    <div class="container">
+                                        <input type="radio" value="correct" class="radioB" id="radio4" name="radioImage2" />
+                                        <img src="./Assets/images/Imagen2.png" class="sizeImage" alt="imagen-2">
+                            
+                                    </div>
+                                          </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center m-auto p-3">
+                        <div class="container-button">
+                            <button onclick="comprobar(this.id)" class="btn btn-info btn-group-lg text-white" id="buttonSecondGame">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="viewGlass" id="containerGameThree">
+
+            <div class="container" id="firstImageGameThree">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 m-auto">
+                                      <img src="./Assets/images/imagen3.png" class="sizeImage" alt="imagen-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="imageComparativeThree">
+                <div class="row">
+                    <div class="col-md-10 m-auto container-message">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="container m-2">
+                                        <input type="radio" value="correct" id="radio5" name="radioImage3" class="radioB" />
+                                        <img src="./Assets/images/imagen3.png" class="sizeImage" alt="imagen-1">
+                          
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="container m-2">
+                                        <input type="radio" value="Incorrect" id="radio6" name="radioImage3" class="radioB" />
+                                        <img src="./Assets/images/imagen3C.png" class="sizeImage" alt="imagen-2">
+                             
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center m-auto p-3">
+                        <div class="container-button">
+                            <button onclick="comprobar(this.id)" class="btn btn-info btn-group-lg text-white" id="buttonThirdGame">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./src/game1.js"></script>
+
+
+</html>

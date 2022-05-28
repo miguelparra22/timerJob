@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background-principal{
+    background-color: aliceblue;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.viewGlass {
+    width: 80%;
+    height: 500px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.container-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 190px;
+}
+
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-button button{
+    width: 50%;
+}
+
+
+.container-message{
+    text-align: center;
+    font-size: 25px;
+}
+
+.sizeImage{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+#containerGameOne{
+    display: none;
+}
+
+#firstImageGameOne{
+    display: none;
+}
+
+#imageComparativeOne{
+    display: none;
+}
+
+#containerGameTwo{
+    display: none;
+}
+
+#firstImageGameTwo{
+    display: none;
+}
+
+
+#firstImageGameThree{
+    display: none;
+}
+
+#imageComparativeThree{
+    display: none;
+}
+
+#imageComparativeTwo{
+    display: none;
+}
+
+#containerGameThree{
+    display: none;
+}
+
+.sizeImage{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedorFlechas{
+    width: 90%;
+    height: 300px;
+    padding: 30px;
+    font-size: 30px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+
+#containerComboOne{
+    display: none;
+}
+
+#containerComboTwo{
+    display: none;
+}
+
+#containerComboThree{
+    display: none;
+}
+
+#containerGameFour{
+    display: none;
+}
+
+.draggable-elements{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.draggable{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem !important;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+}
+
+.draggable:hover{
+    opacity: 0.5;
+}
+
+.droppable{
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, backgorund-color 0.4s;
+}
+
+
+.droppable span{
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+.droppable.droppable-hover{
+   border-width: 5px;
+   transform: scale(1.1);
+}
+
+.droppable .dropped{
+   border-style: solid;
+   color: #fff;
+}
+
+
+.droppable .dropped span{
+   font-size: 0.75rem;
+   margin-top: 0.5rem;
+}
+
+.droppable .dropped i{
+   pointer-events: none;
+}
+
+.draggable.dragged{
+   user-select: none;
+   opacity: 0.1;
+   cursor: default;
+}
+
+.draggable.dragged:hover{
+   opacity: 0.1;
+}
+
+.droppable-elements{
+    display: flex;
+}
+
+
+
+/*Segundo */
+
+.draggable-elements3{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.draggable3{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem !important;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+}
+
+.draggable3:hover{
+    opacity: 0.5;
+}
+
+.droppable3{
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, backgorund-color 0.4s;
+}
+
+
+.droppable3 span{
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+.droppable3 .droppable-hover3{
+   border-width: 5px;
+   transform: scale(1.1);
+}
+
+.droppable3 .dropped3{
+   border-style: solid;
+   color: #fff;
+}
+
+
+.droppable3 .dropped3 span{
+   font-size: 0.75rem;
+   margin-top: 0.5rem;
+}
+
+.droppable3 .dropped3 i{
+   pointer-events: none;
+}
+
+.draggable3.dragged3{
+   user-select: none;
+   opacity: 0.1;
+   cursor: default;
+}
+
+.draggable3.dragged3:hover{
+   opacity: 0.1;
+}
+
+.droppable-elements3{
+    display: flex;
+}
+
+/*Tercero*/
+
+.draggable-elements4{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.draggable4{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem !important;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+}
+
+.draggable4:hover{
+    opacity: 0.5;
+}
+
+.droppable4{
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, backgorund-color 0.4s;
+}
+
+
+.droppable4 span{
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+.droppable4.droppable-hover4{
+   border-width: 5px;
+   transform: scale(1.1);
+}
+
+.droppable4 .dropped4{
+   border-style: solid;
+   color: #fff;
+}
+
+
+.droppable4 .dropped4 span{
+   font-size: 0.75rem;
+   margin-top: 0.5rem;
+}
+
+.droppable4 .dropped4 i{
+   pointer-events: none;
+}
+
+.draggable4.dragged4{
+   user-select: none;
+   opacity: 0.1;
+   cursor: default;
+}
+
+.draggable4.dragged4:hover{
+   opacity: 0.1;
+}
+
+.droppable-elements4{
+    display: flex;
+}
+
+/*cuarto*/
+
+.draggable-elements2{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.draggable2{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem !important;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+}
+
+.draggable2:hover{
+    opacity: 0.5;
+}
+
+.droppable2{
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, backgorund-color 0.4s;
+}
+
+
+.droppable2 span{
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+.droppable2.droppable-hover2{
+   border-width: 5px;
+   transform: scale(1.1);
+}
+
+.droppable2.dropped2{
+   border-style: solid;
+   color: #fff;
+}
+
+
+.droppable2 .dropped2 span{
+   font-size: 0.75rem;
+   margin-top: 0.5rem;
+}
+
+.droppable2 .dropped2 i{
+   pointer-events: none;
+}
+
+.draggable2.dragged2{
+   user-select: none;
+   opacity: 0.1;
+   cursor: default;
+}
+
+.draggable2.dragged2:hover{
+   opacity: 0.1;
+}
+
+.droppable-elements2{
+    display: flex;
+}
+
+
+#containerArrastreOne{
+  display: none;
+}
+
+#containerArrastreTwo{
+    display: none;
+}
+
+
+#containerArrastreThree{
+    display: none;
+}
+
+
+#containerArrastreFour{
+    display: none;
+}
+
+
+.container-button{
+    display: flex;
+    align-items: center;
+}
+
+.container-button button{
+    margin: 3px;
+}
+
+#detener{
+    display: none;
+}
+
+
+.viewGlassVideo{
+    width: 80%;
+    height: 500px;
+    padding: 30px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: none;
+
+}
+
+
+@media(max-width: 600px){
+   html{font-size: 14px;}
+   .draggable-elements{margin: 1.5rem}
+}

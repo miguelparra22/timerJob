@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>TimerJob</title>
+    <link rel="stylesheet" href="./Assets/styles/style.css">
+</head>
+<body>
+   <main class="background-principal">
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+            <h2><a class="navbar-brand" href="#">TimerJob</a></h2>
+        </div>
+    </nav>
+
+    <section class="viewGlass" id="container-message">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 m-auto container-message">
+                    <h2>Es hora de una pausa activa</h2>
+                    <hr/>
+                    <p>
+                        Recuerda que para tu salud es muy importante tener una pausa activa,
+                        en este juego deberás observar una secuencia por 20 segundos,
+                        luego de eso deberás teclear la secuencia de manera veloz.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center m-auto">
+                    <div class="container-button">
+                        <button onclick="Iniciar()" class="btn btn-info btn-group-lg text-white">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="viewGlass" id="containerGameOne"> <!--firstImageGameOne-->
+
+        <div class="container" id="firstImageGameOne">  <!--firstImageGameOne-->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-9 m-auto">
+                                  <img src="./Assets/images/juego2/1.jpg" width="500" height="300" alt="imagen-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="containerComboOne"> <!--imageComparativeOne -->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 m-auto">
+                                <h4>Es hora de digitar</h4>
+                                <hr />
+                                <div class="contenedorFlechas">
+                                    <p id="containerF"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="viewGlass" id="containerGameTwo"> <!--firstImageGameOne-->
+
+        <div class="container" id="firstImageGameTwo">  <!--firstImageGameOne-->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-9 m-auto">
+                                  <img src="./Assets/images/juego2/2.jpg" width="500" height="300" alt="imagen-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="containerComboTwo"> <!--imageComparativeOne -->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 m-auto">
+                                <h4>Es hora de digitar</h4>
+                                <hr />
+                                <div class="contenedorFlechas">
+                                    <p id="containerF2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="viewGlass" id="containerGameThree"> <!--firstImageGameOne-->
+
+        <div class="container" id="firstImageGameThree">  <!--firstImageGameOne-->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-9 m-auto">
+                                  <img src="./Assets/images/juego2/3.jpg" width="500" height="300" alt="imagen-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="containerComboThree"> <!--imageComparativeOne -->
+            <div class="row">
+                <div class="col-md-10 m-auto container-message">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 m-auto">
+                                <h4>Es hora de digitar</h4>
+                                <hr />
+                                <div class="contenedorFlechas" id="contenedorFlechas3">
+                                    <p id="containerF3"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   </main>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./src/game2.js"></script>
+
+
+</html>
