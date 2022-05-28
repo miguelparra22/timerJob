@@ -75,10 +75,6 @@ function IniciarJuego() {
     }
 }
 
-function redirigirVideo(){
-    alert("Redirigiendo al video.")
-}
-
 function comprobar(id){
 
    // let radios = document.querySelectorAll(".radioB");
@@ -94,13 +90,17 @@ function comprobar(id){
          case "buttonOneGame":
       
          if(radioSceneOne1.checked === true){
-            Swal.fire(
-                'Felicidades!',
-                'Ganaste: Gotas oftálmicas!',
-                'success'
-            )
+            Swal.fire({
+                title: 'Felicidades',
+                text: "Ganaste: Gotas oftálmicas!",
+                icon: 'success',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Aceptar'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    video();
+                }});
 
-            redirigirVideo();
          }else{
              
            
@@ -127,13 +127,16 @@ function comprobar(id){
          case "buttonSecondGame":
          
              if(radioSceneTwo2.checked === true){
-                Swal.fire(
-                    'Felicidades!',
-                    'Ganaste: kit de limpieza para tus lentes!',
-                    'success'
-                )
-
-                redirigirVideo();
+                Swal.fire({
+                    title: 'Felicidades',
+                    text: "Ganaste: kit de limpieza para tus lentes!!",
+                    icon: 'success',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'Aceptar'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                        video();
+                    }});
              }else{
 
                 Swal.fire({
@@ -144,7 +147,7 @@ function comprobar(id){
                     confirmButtonText: 'Aceptar'
                   }).then((result) => {
                     if (result.isConfirmed) {
-                        location.reload()
+                        location.reload();
                 }});
              }
 
@@ -165,9 +168,6 @@ function comprobar(id){
                     if (result.isConfirmed) {
                         video();
                     }});
-
-                redirigirVideo();
-               
              }else{
                 Swal.fire({
                     title: 'Error',
@@ -193,13 +193,11 @@ function comprobar(id){
 
 
 function video(){
-   
     let videoLink = "videos.html";
     window.location.href = videoLink;
-    alert("hola")
-    console.log(videoLink)
-    let valorAleatorio = Math.floor(Math.random() * (8 - 1) + 1);
-    let divMostrar = document.getElementById("videoContainer"+valorAleatorio)
-    alert(divMostrar)
-    divMostrar.style.display = "block"
+}
+
+function home(){
+    let home = "index.html";
+    window.location.href = home;
 }

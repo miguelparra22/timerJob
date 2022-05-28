@@ -86,7 +86,7 @@ function firstScene() {
 
     setTimeout(function () {
         showComparative(divOne, divTwo)
-    }, 10000);
+    }, 20000);
 
 
     var konami = new Combo([derecha, arriba, izquierda, abajo,derecha])
@@ -112,11 +112,16 @@ function firstScene() {
         setTimeout(function(){valorTecla =""}, 15000);
 
         if (konami.pulsada(codigoTecla) === true) {
-            Swal.fire(
-                'Felicidades!',
-                'Ganaste: gafas de sol !',
-                'success'
-            )
+            Swal.fire({
+                title: 'Felicidades',
+                text:  "Ganaste: gafas de sol !",
+                icon: 'success',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Aceptar'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    video();
+                }});
         }
     });
 }
@@ -151,11 +156,17 @@ function secondScene() {
         document.getElementById("containerF2").innerHTML = valorTecla;
 
         if (konami2.pulsada(codigoTecla) === true) {
-            Swal.fire(
-                'Felicidades!',
-                'Ganaste:  Examen sin costo!',
-                'success'
-            )
+
+            Swal.fire({
+                title: 'Felicidades',
+                text:  "Ganaste:  Examen sin costo!",
+                icon: 'success',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Aceptar'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    video();
+                }});
         }
     });
     
@@ -192,11 +203,17 @@ function thirdScene() {
         setTimeout(function(){valorTecla =""}, 15000);
 
         if (konami3.pulsada(codigoTecla) === true) {
-            Swal.fire(
-                'Felicidades!',
-                'Ganaste: Montura oftalmica !',
-                'success'
-            )
+
+            Swal.fire({
+                title: 'Felicidades',
+                text:  "Ganaste: Montura oftalmica !",
+                icon: 'success',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Aceptar'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    video();
+                }});
         }
     });
 }
@@ -236,3 +253,14 @@ function Iniciar() {
 }
 
 
+function video(){
+    let videoLink = "videos.html";
+    window.location.href = videoLink;
+}
+function reload(){
+    location.reload();
+}
+function home(){
+    let home = "index.html";
+    window.location.href = home;
+}

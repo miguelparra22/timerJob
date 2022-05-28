@@ -90,7 +90,7 @@ function firstScene() {
                 confirmButtonText: 'Aceptar'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    location.reload()
+                    video();
                 }
             });
 
@@ -172,7 +172,7 @@ function secondSceneGame3() {
                 confirmButtonText: 'Aceptar'
               }).then((result) => {
                 if (result.isConfirmed) {
-                    location.reload()
+                    video();
                 }});
         }
 
@@ -254,7 +254,7 @@ function thirdScene() {
                 confirmButtonText: 'Aceptar'
               }).then((result) => {
                 if (result.isConfirmed) {
-                    location.reload()
+                    video();
                 }});
         }
 
@@ -380,4 +380,14 @@ function Iniciar() {
         fourScene();
     }
 
+}
+
+function video(){
+    let videoLink = "videos.html";
+    window.location.href = videoLink;
+}
+
+function home(){
+    let home = "index.html";
+    window.location.href = home;
 }

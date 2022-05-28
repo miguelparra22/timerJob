@@ -1,4 +1,4 @@
-const timeStart = 1;
+const timeStart = 20;
 let time = timeStart * 60;
 
 const countDown = document.getElementById("tiempo");
