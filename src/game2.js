@@ -18,7 +18,7 @@ class Combo {
         this.botones;
         this.indice = 0;
         this.codigoBoton;
-        this.tiempoPermitido = 1000;
+        this.tiempoPermitido = 5000;
         this.tiempoUltimaPulsación;  // hara
         this.botones = cadena;  //Asignacion de teclas al Array
     }
@@ -167,6 +167,8 @@ function secondScene() {
                 if (result.isConfirmed) {
                     video();
                 }});
+        }else if(konami2.pulsada(codigoTecla) === false){
+            alert("has cometido un error")
         }
     });
     
