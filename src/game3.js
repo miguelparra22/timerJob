@@ -335,7 +335,7 @@ function fourScene() {
                 confirmButtonText: 'Aceptar'
               }).then((result) => {
                 if (result.isConfirmed) {
-                    location.reload()
+                    video();
                 }});
            
         }

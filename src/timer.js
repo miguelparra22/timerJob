@@ -32,10 +32,17 @@ function updateCountdown(){
         time--;
     }
 
+    setTimeout(showDiv("detener"), 3000)
+
+}
+
+function showDiv(id){
+    let elemento = document.getElementById(id)
+    elemento.style.display = "block"
 }
 
 function pauseSound(){
-    alarma.pause();
+    
     redireccion();
 }
 
