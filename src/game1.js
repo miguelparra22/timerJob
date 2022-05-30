@@ -53,6 +53,7 @@ function thirdScene() {
 
 function IniciarJuego() {
     let valorAleatorio = Math.floor(Math.random() * (4 - 1)) + 1;
+    
     ocultarDiv(divMessage);
 
     if (valorAleatorio === 1) {

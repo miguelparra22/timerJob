@@ -89,12 +89,10 @@ function firstScene() {
     }, 20000);
 
 
-    var konami = new Combo([derecha, arriba, izquierda, abajo,derecha])
+    var konami = new Combo([derecha, abajo, abajo, derecha])
     document.addEventListener('keydown', function (tecla) {
         var codigoTecla = tecla.keyCode;
         var valorTecla = "";
-
-
 
         if (codigoTecla === arriba) {
             valorTecla = "Arriba";
@@ -135,7 +133,7 @@ function secondScene() {
         showComparative(imageOne, imageComparative)
     }, 10000);
 
-    var konami2 = new Combo([arriba, derecha, izquierda, abajo,abajo,derecha])
+    var konami2 = new Combo([abajo, derecha, abajo, izquierda])
     document.addEventListener('keydown', function (tecla) {
         var codigoTecla = tecla.keyCode;
         var valorTecla = "";
@@ -152,7 +150,7 @@ function secondScene() {
             valorTecla = "Izquierda";
         }
         
-        setTimeout(function(){valorTecla =""}, 15000);
+        setTimeout(function(){document.getElementById("containerF2").innerHTML = "";}, 15000);
         document.getElementById("containerF2").innerHTML = valorTecla;
 
         if (konami2.pulsada(codigoTecla) === true) {
@@ -167,9 +165,8 @@ function secondScene() {
                 if (result.isConfirmed) {
                     video();
                 }});
-        }else if(konami2.pulsada(codigoTecla) === false){
-            alert("has cometido un error")
         }
+        
     });
     
 }
@@ -184,7 +181,7 @@ function thirdScene() {
         showComparative(imageOne, imageComparative)
     }, 10000);
 
-    var konami3 = new Combo([arriba, arriba, arriba, derecha,izquierda,abajo,abajo])
+    var konami3 = new Combo([abajo, arriba, abajo, izquierda])
     document.addEventListener('keydown', function (tecla) {
         var codigoTecla = tecla.keyCode;
         var valorTecla = "";
@@ -205,7 +202,7 @@ function thirdScene() {
         setTimeout(function(){valorTecla =""}, 15000);
 
         if (konami3.pulsada(codigoTecla) === true) {
-
+           
             Swal.fire({
                 title: 'Felicidades',
                 text:  "Ganaste: Montura oftalmica !",
