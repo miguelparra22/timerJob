@@ -77,6 +77,8 @@ function firstScene() {
             draggableElement.setAttribute("draggable", "false");
             event.target.insertAdjacentHTML("afterbegin", `<i class="fa fa-${draggableElementData}"></i>`);
             terminado--;
+        }else{
+            alert('Posición no correcta')
         }
 
 
@@ -159,6 +161,8 @@ function secondSceneGame3() {
             draggableElement.setAttribute("draggable2", "false");
             event.target.insertAdjacentHTML("afterbegin", `<i class="fa fa-${draggableElementData}"></i>`);
             terminado--;
+        }else{
+            alert('Posición no correcta')
         }
 
 
@@ -241,6 +245,8 @@ function thirdScene() {
             draggableElement.setAttribute("draggable3", "false");
             event.target.insertAdjacentHTML("afterbegin", `<i class="fa fa-${draggableElementData}"></i>`);
             terminado--;
+        }else{
+            alert('Posición no correcta')
         }
 
 
@@ -322,6 +328,8 @@ function fourScene() {
             draggableElement.setAttribute("draggable4", "false");
             event.target.insertAdjacentHTML("afterbegin", `<i class="fa fa-${draggableElementData}"></i>`);
             terminado--;
+        }else{
+            alert('Posición no correcta')
         }
 
 
